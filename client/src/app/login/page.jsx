@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
@@ -11,6 +11,10 @@ const LoginPage = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
+
+  useEffect(() => {
+    alert("Please SignUp if you are a new user!!");
+  }, []);
 
   const handleLogin = async () => {
     try {

@@ -30,13 +30,13 @@ export default function UserPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      {evalcode != "notEval" ? (
-        <div className="max-w-md w-full p-6 rounded-lg shadow-lg bg-white">
-          <h1 className="text-2xl font-semibold text-gray-800 mb-4">
-            User Evaluation Page
+      {evalcode !== "notEval" ? (
+        <div className="max-w-md w-full p-8 rounded-lg shadow-lg bg-white">
+          <h1 className="text-3xl font-semibold text-gray-800 mb-6">
+            Submission Review
           </h1>
 
-          <div>
+          <div className="mb-4">
             <h2 className="text-xl font-medium text-gray-800 mb-2">
               Your Score: {score}
             </h2>
@@ -46,7 +46,9 @@ export default function UserPage() {
           </div>
         </div>
       ) : (
-        <p className="text-4xl text-white">Please wait for evaluation.</p>
+        <div className="flex items-center justify-center w-full h-screen">
+          <p className="text-4xl text-white">Please wait for evaluation.</p>
+        </div>
       )}
     </div>
   );
