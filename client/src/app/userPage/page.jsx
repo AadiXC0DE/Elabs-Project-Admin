@@ -18,7 +18,7 @@ export default function UserPage() {
       const response = await axios.post(
         "https://elabs-proj-eval-api.el.r.appspot.com/api/v1/proj/getUser",
         { uid: uid ,
-	  set : "ui-session-3"
+	  set : "ui-final"
 	}
       );
       setScore(response.data.score);
