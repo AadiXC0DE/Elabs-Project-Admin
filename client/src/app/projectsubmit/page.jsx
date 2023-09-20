@@ -16,7 +16,7 @@ export default function ProjectSubmit() {
 
       // Send POST request using Axios
       const response = await axios.post(
-        "https://elabs-proj-eval-api.el.r.appspot.com/api/v1/proj/crtProj/ui-session-3",
+        "https://elabs-proj-eval-api.el.r.appspot.com/api/v1/proj/crtProj/ui-final",
         {
           projLink: projectLink,
           uid: uid,
